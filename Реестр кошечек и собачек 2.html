@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реестр кошечек</title>
+</head>
+<body>
+        <script>                         
+            var UserName = prompt("Введите ваше имя", "Николай");
+            alert("Здравствуйте, " + UserName);
+            alert(UserName + ", готовы начать составлять реестр?");
+            let q = true;
+            let w = new Array();
+            let e = 0;
+    
+            while (q != false)
+            {
+                if (e < 10)
+                {
+                    var a = prompt("У вас котик или собачка", "Котик");
+                    let r = prompt("Какая порода у " + a, "Дворовой");
+                    let t = prompt("Как зовут вашего " + a, "Вася");
+                    let year = prompt("Какого года рождения " + t, "2015");
+                    console.log((e+1) +"; " + a +"; " + r +"; " + t +"; " + year +"; "+ "Возраст:" + (2022 - Number(year)) + "года");
+                    q = !(confirm("Завершим?"));
+                    e++;
+                }
+                else 
+                {
+                    alert("В реестре нет мест");
+                    q = false;
+                }
+            }
+    
+    
+        </script>   
+</body>
+</html>
